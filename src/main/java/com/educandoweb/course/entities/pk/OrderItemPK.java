@@ -1,6 +1,7 @@
 package com.educandoweb.course.entities.pk;
 
 import java.util.Objects;
+import java.io.Serializable;
 
 import com.educandoweb.course.entities.Order;
 import com.educandoweb.course.entities.Product;
@@ -10,7 +11,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
-public class OrderItemPK {
+public class OrderItemPK implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
